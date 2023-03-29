@@ -1,5 +1,5 @@
 jupyterlab
-pdpilot=0.4.3
+pdpilot=0.4.4
 xgboost=1.7.4
 pyzmq<25
 jupyter_client<8
