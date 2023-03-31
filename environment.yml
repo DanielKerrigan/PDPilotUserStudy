@@ -7,5 +7,5 @@ dependencies:
   - pip
   - pip:
     - xgboost==1.7.4
-    - pdpilot==0.4.4
+    - pdpilot==0.4.5
     - pmlb
