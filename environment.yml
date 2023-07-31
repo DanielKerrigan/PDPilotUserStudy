@@ -1,11 +1,10 @@
 name: pdpilot-study
+channels:
+  - conda-forge
 dependencies:
-  - python=3.8.10
-  - jupyterlab
-  - pyzmq<25
-  - jupyter_client<8
+  - python=3.10
+  - notebook
   - pip
   - pip:
     - xgboost==1.7.4
-    - pdpilot==0.4.5
-    - pmlb
+    - pdpilot==0.5.2
