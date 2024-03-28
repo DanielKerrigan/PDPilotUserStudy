@@ -1,8 +1,8 @@
 # PDPilot User Study
 
-This repository contains the material for the user study on [PDPilot](https://github.com/DanielKerrigan/PDPilot).
-
 ## Contents
+
+This repository contains the material for the user study on [PDPilot](https://github.com/DanielKerrigan/PDPilot).
 
 - [introduction-and-interview-slides.pdf](https://github.com/DanielKerrigan/PDPilotUserStudy/blob/main/introduction-and-interview-slides.pdf): Slides to introduce the study and review PDP and ICE plots and slides for the semi-structured interview.
 - [protocol.pdf](https://github.com/DanielKerrigan/PDPilotUserStudy/blob/main/protocol.pdf): A document that outlines the protocol of the study. In particular, it includes the script for the tutorial of how to use PDPilot, the questions that were asked to participants during training, and the prompt for the model analysis.
