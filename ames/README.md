@@ -10,7 +10,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - [AmesHousingPreprocessedTrain.csv](AmesHousingPreprocessedTrain.csv): Preprocessed training dataset.
 - [calculate_plots.ipynb](calculate_plots.ipynb): Notebook for calculating the PDP and ICE plot data for PDPilot.
 - [dataset_preprocessing.ipynb](dataset_preprocessing.ipynb): Notebook for preprocessing the dataset.
-- [modeling.ipynb](modling.ipynb): Notebook for training the model.
+- [modeling.ipynb](modeling.ipynb): Notebook for training the model.
 - [widget.ipynb](widget.ipynb): Notebook running the PDPilot widget.
 
 ## Data Dictionary
