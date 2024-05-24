@@ -4,10 +4,10 @@
 
 This repository contains the material for the user study on [PDPilot](https://github.com/DanielKerrigan/PDPilot).
 
-- [introduction-and-interview-slides.pdf](https://github.com/DanielKerrigan/PDPilotUserStudy/blob/main/introduction-and-interview-slides.pdf): Slides to introduce the study and review PDP and ICE plots and slides for the semi-structured interview.
-- [protocol.pdf](https://github.com/DanielKerrigan/PDPilotUserStudy/blob/main/protocol.pdf): A document that outlines the protocol of the study. In particular, it includes the script for the tutorial of how to use PDPilot, the questions that were asked to participants during training, and the prompt for the model analysis.
-- [ames](https://github.com/DanielKerrigan/PDPilotUserStudy/tree/main/ames): The Ames, Iowa housing dataset, trained model, and notebooks for preprocessing the dataset, training the model, calculating the plots, and running PDPilot. This dataset is for the main model analysis that the participant performs.
-- [bike-rental](https://github.com/DanielKerrigan/PDPilotUserStudy/tree/main/bike-rental): The Bike Sharing dataset and notebook for training the model and running PDPilot. This dataset is used during training.
+- [introduction-and-interview-slides.pdf](introduction-and-interview-slides.pdf): The first part of this file contains the slides to introduce the study and review PDP and ICE plots. The second part contains the slides for the semi-structured interview.
+- [protocol.pdf](protocol.pdf): A document that outlines the protocol of the study. In particular, it includes the script for the tutorial of how to use PDPilot, the questions that were asked to participants during training, and the prompt for the model analysis.
+- [ames](ames): The Ames, Iowa housing dataset, trained model, and notebooks for preprocessing the dataset, training the model, calculating the plots, and running PDPilot. This dataset is for the main model analysis that the participant performs.
+- [bike-rental](bike-rental): The Bike Sharing dataset and notebook for training the model and running PDPilot. This dataset is used during training.
 - [churn](https://github.com/DanielKerrigan/PDPilotUserStudy/tree/main/churn): The Churn dataset and notebook for training the model and running PDPilot. This dataset is used during the tutorial.
 
 ## Installation

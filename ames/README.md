@@ -2,6 +2,17 @@
 
 The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing Data as an End of Semester Regression Projec](https://jse.amstat.org/v19n3/decock.pdf). The links to the dataset and data dictionary in the paper are dead. You can find the dataset [here](https://jse.amstat.org/v19n3/decock/AmesHousing.txt) and the data dictionary [here](https://jse.amstat.org/v19n3/decock/DataDocumentation.txt). A modified version of the data dictionary is available below.
 
+## Contents
+
+- [ames_model.json](ames_model.json): Trained XGBoost model.
+- [AmesHousing.tsv](AmesHousing.tsv): Original dataset.
+- [AmesHousingPreprocessedTest.csv](AmesHousingPreprocessedTest.csv): Preprocessed test dataset, which is held out and not used.
+- [AmesHousingPreprocessedTrain.csv](AmesHousingPreprocessedTrain.csv): Preprocessed training dataset.
+- [calculate_plots.ipynb](calculate_plots.ipynb): Notebook for calculating the PDP and ICE plot data for PDPilot.
+- [dataset_preprocessing.ipynb](dataset_preprocessing.ipynb): Notebook for preprocessing the dataset.
+- [modeling.ipynb](modling.ipynb): Notebook for training the model.
+- [widget.ipynb](widget.ipynb): Notebook running the PDPilot widget.
+
 ## Data Dictionary
 
 **Zoning**: Identifies the general zoning classification of the sale.
@@ -13,40 +24,40 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - High Density - Residential High Density
 - Med. Density - Residential Medium Density
 - Low Density - Residential Low Density
- 
+
 **Lot Frontage**: Linear feet of street connected to property
 
 **Lot Area**: Lot size in square feet
 
 **Street**: Type of road access to property
-- Gravel 
+- Gravel
 - Paved
-        
+
 **Alley**: Type of alley access to property
 
 - Gravel
 - Paved
 - None -  No alley access
-  
+
 **Lot Shape**: General shape of property
 - Reg: Regular
 - Slightly irregular
 - Moderately Irregular
 - Irregular
-       
+
 **Land Contour**: Flatness of the property
 
-- Level - Near Flat/Level 
+- Level - Near Flat/Level
 - Banked - Quick and significant rise from street grade to building
 - Hillside - Significant slope from side to side
 - Depression - Low Depression
-  
+
 **Utilities**: Type of utilities available
 
-- EGWS - All public Utilities (E,G,W,& S) 
+- EGWS - All public Utilities (E,G,W,& S)
 - EGW: Electricity, Gas, and Water (Septic Tank)
 - EG: Electricity and Gas Only
- 
+
 **Lot Configuration**: Lot configuration
 
 - Inside - Inside lot
@@ -54,13 +65,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Cul-de-sac
 - Frontage 2 sides - Frontage on 2 sides of property
 - Frontage 3 sides - Frontage on 3 sides of property
- 
+
 **Land Slope**: Slope of property
 
 - Gentle
 - Moderate
 - Severe
- 
+
 **Neighborhood**: Physical locations within Ames city limits (map available)
 
 - Blmngtn - Bloomington Heights
@@ -98,7 +109,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Adj. positive - Adjacent to postive off-site feature
 - Near positive - Near positive off-site feature--park, greenbelt, etc.
 - Artery - Adjacent to arterial street
-- Feededr - Adjacent to feeder street 
+- Feededr - Adjacent to feeder street
 - Near NS RR - Within 200' of North-South Railroad
 - Adj. NS RR - Adjacent to North-South Railroad
 - Near EW RR - Within 200' of East-West Railroad
@@ -110,21 +121,21 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Adj. positive - Adjacent to postive off-site feature
 - Near positive - Near positive off-site feature--park, greenbelt, etc.
 - Artery - Adjacent to arterial street
-- Feededr - Adjacent to feeder street 
+- Feededr - Adjacent to feeder street
 - Near NS RR - Within 200' of North-South Railroad
 - Adj. NS RR - Adjacent to North-South Railroad
 - Adj. EW RR - Adjacent to East-West Railroad
- 
+
 **Building Type**: Type of dwelling
-  
-- 1 Family - Single-family Detached 
+
+- 1 Family - Single-family Detached
 - 2 Family Conv. - Two-family Conversion; originally built as one-family dwelling
 - Duplex
 - TwnhsE - Townhouse End Unit
 - Twnhs - Townhouse Inside Unit
- 
+
 **House Style**: Style of dwelling
- 
+
 - 1 Story - One story
 - 1.5 Finished - One and one-half story: 2nd level finished
 - 1.5 Unfinished - One and one-half story: 2nd level unfinished
@@ -133,7 +144,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - 2.5 Unfinished - Two and one-half story: 2nd level unfinished
 - Split Foyer
 - Split Level
- 
+
 **Overall Quality**: Rates the overall material and finish of the house
 
 - 10 - Very Excellent
@@ -146,20 +157,20 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - 3 - Fair
 - 2 - Poor
 - 1 - Very Poor
- 
+
 **Overall Condition**: Rates the overall condition of the house
 
 - 10 - Very Excellent
 - 9 - Excellent
 - 8 - Very Good
 - 7 - Good
-- 6 - Above Average 
+- 6 - Above Average
 - 5 - Average
-- 4 - Below Average 
+- 4 - Below Average
 - 3 - Fair
 - 2 - Poor
 - 1 - Very Poor
-  
+
 **Year Built**: Original construction date
 
 **Year Remodel**: Remodel date (same as construction date if no remodeling or additions)
@@ -172,7 +183,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Hip
 - Mansard
 - Shed
-  
+
 **Roof Material**: Roof material
 
 - Tile - Clay or Tile
@@ -183,7 +194,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Tar - Gravel & Tar
 - Wood Shakes
 - Wood Shingles
-  
+
 **Exterior 1st**: Exterior covering on house
 
 - Asbestos Shingles
@@ -197,13 +208,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Metal Siding
 - Other
 - Plywood
-- PreCast 
+- PreCast
 - Stone
 - Stucco
 - Vinyl Siding
 - Wood Siding
 - Wood Shingles
- 
+
 **Exterior 2nd**: Exterior covering on house (if more than one material)
 
 - Asbestos Shingles
@@ -223,7 +234,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Vinyl Siding
 - Wood Siding
 - Wood Shingles
- 
+
 **Masonry Veneer**: Masonry veneer type
 
 - Brick Common
@@ -231,17 +242,17 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Cinder Block
 - None
 - Stone
- 
+
 **Masonry Veneer Area**: Masonry veneer area in square feet
 
-**Exterior Quality**: Evaluates the quality of the material on the exterior 
-  
+**Exterior Quality**: Evaluates the quality of the material on the exterior
+
 - Excellent
 - Good
 - Typical
 - Fair
 - Poor
-  
+
 **Exterior Condition**: Evaluates the present condition of the material on the exterior
 
 - Excellent
@@ -249,25 +260,25 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Typical
 - Fair
 - Poor
-  
+
 **Foundation**: Type of foundation
-  
+
 - Brick - Brick & Tile
 - Cinder Block
-- Concrete - Poured Contrete 
+- Concrete - Poured Contrete
 - Slab
 - Stone
 - Wood
-  
+
 **Basement Height**: Height of the basement in inches
 
-- 100+ 
-- 90-99 
-- 80-89 
-- 70-79 
-- <70 
+- 100+
+- 90-99
+- 80-89
+- 70-79
+- <70
 - No Basement
-  
+
 **Bsmt Condition**: Evaluates the general condition of the basement
 
 - Excellent
@@ -276,32 +287,32 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Fair - dampness or some cracking or settling
 - Poor - Severe cracking, settling, or wetness
 - No Basement
- 
+
 **Bsmt Exposure**: Refers to walkout or garden level walls
 
 - Good: Good Exposure
-- Average: Average Exposure (split levels or foyers typically score average or above) 
+- Average: Average Exposure (split levels or foyers typically score average or above)
 - Minimum: Mimimum Exposure
 - No exposure
 - No basement
- 
+
 **Basement Finish Rating 1**: Rating of basement finished area
 
 - Good Living Quarters
 - Average Living Quarters
-- Below Average Living Quarters 
+- Below Average Living Quarters
 - Average Rec Room
 - Low Quality
 - Unfinshed
 - No basement
-  
+
 **Basement Finish Area 1**: Type 1 finished square feet
 
 **Basement Finish Rating 2**: Rating of basement finished area (if multiple types)
 
 - Good Living Quarters
 - Average Living Quarters
-- Below Average Living Quarters 
+- Below Average Living Quarters
 - Average Rec Room
 - Low Quality
 - Unfinshed
@@ -314,14 +325,14 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 **Total Basement Area**: Total square feet of basement area
 
 **Heating**: Type of heating
-  
+
 - Floor Furnace
 - Gas, Air - Gas forced warm air furnace
 - Gas, Water - Gas hot water or steam heat
-- Gravity furnace 
+- Gravity furnace
 - Non-gas, water - Hot water or steam heat other than gas
 - Wall furnace
-  
+
 **Heating Quality**: Heating quality and condition
 
 - Excellent
@@ -329,21 +340,21 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Typical
 - Fair
 - Poor
-  
+
 **Central Air**: Central air conditioning
 - No
 - Yes
-  
+
 **Electrical**: Electrical system
 
 - Circuit Breakers - Standard Circuit Breakers & Romex
-- Avg. Fuse Box - FuseA Fuse Box over 60 AMP and all Romex wiring (Average) 
+- Avg. Fuse Box - FuseA Fuse Box over 60 AMP and all Romex wiring (Average)
 - Fair Fuse Box - FuseF 60 AMP Fuse Box and mostly Romex wiring (Fair)
 - Poor Fuse Box - FuseP 60 AMP Fuse Box and mostly knob & tube wiring (poor)
 - Mix - Mixed
-  
+
 **1st Floor Area**: First Floor square feet
- 
+
 **2nd Floor Area**: Second floor square feet
 
 **Low Quality Finished Area**: Low quality finished square feet (all floors)
@@ -369,7 +380,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Typical
 - Fair
 - Poor
-        
+
 **Rooms Above Ground**: Total rooms above grade (does not include bathrooms)
 
 **Functionality**: Home functionality (Assume typical unless deductions are warranted)
@@ -382,7 +393,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Major Deductions 2
 - Severely Damaged
 - Salvage only
-  
+
 **Fireplaces**: Number of fireplaces
 
 **Fireplace Quality**: Fireplace quality
@@ -393,9 +404,9 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Fair - Prefabricated Fireplace in basement
 - Poor - Ben Franklin Stove
 - No fireplace
-  
+
 **Garage Type**: Garage location
-  
+
 - Multiple - More than one type of garage
 - Attached - Attached to home
 - Basement - Basement Garage
@@ -403,13 +414,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Car Port
 - Detached - Detached from home
 - None - No Garage
-  
+
 **Garage Year**: Year garage was built (same as year the house was built if no garage)
 
 **Garage Finish**: Interior finish of the garage
 
 - Finished
-- Rough Finished 
+- Rough Finished
 - Unfinished
 - No garage
 
@@ -425,7 +436,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Fair
 - Poor
 - No Garage
-  
+
 **Garage Condition**: Garage condition
 
 - Excellent
@@ -434,13 +445,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Fair
 - Poor
 - No garage
-  
+
 **Paved Drive**: Paved driveway
 
-- Paved 
+- Paved
 - Partial: Partial Pavement
 - Dirt: Dirt/Gravel
-  
+
 **Wood Deck Area**: Wood deck area in square feet
 
 **Open Porch Area**: Open porch area in square feet
@@ -454,13 +465,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 **Pool Area**: Pool area in square feet
 
 **Pool Quality**: Pool quality
-  
+
 - Excellent
 - Good
 - Average/Typical
 - Fair
 - No Pool
-  
+
 **Fence**: Fence quality
 
 - Good Privacy
@@ -468,16 +479,16 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Good Wood
 - Min. Wood/wire - Minimum Wood/Wire
 - None - No Fence
- 
+
 **Misc Feature**: Miscellaneous feature not covered in other categories
-  
+
 - Elevator
 - 2nd Garage - 2nd Garage (if not described in garage section)
 - Other
 - Shed - Shed (over 100 SF)
 - Tennis Court
 - None
-  
+
 **Misc Value**: $Value of miscellaneous feature
 
 **Month Sold**: Month Sold (MM)
@@ -485,7 +496,7 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 **Year Sold**: Year Sold (YYYY)
 
 **Sale Type**: Type of sale
-  
+
 - Deed - Warranty Deed - Conventional
 - Cash Deed - Warranty Deed - Cash
 - VA Loan Deed - Warranty Deed - VA Loan
@@ -496,12 +507,12 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 - Low Interest Contract - Contract Low Interest
 - Low Down Payment Contract - Contract Low Down
 - Other
-  
+
 **Sale Condition**: Condition of sale
 
 - Normal - Normal Sale
 - Abnorml - Abnormal Sale -  trade, foreclosure, short sale
 - Adjoining - Adjoining Land Purchase
-- Allocation - two linked properties with separate deeds, typically condo with a garage unit 
+- Allocation - two linked properties with separate deeds, typically condo with a garage unit
 - Family - Sale between family members
 - Partial - Home was not completed when last assessed (associated with New Homes)
