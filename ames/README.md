@@ -4,13 +4,13 @@ The dataset comes from the paper [Ames, Iowa: Alternative to the Boston Housing 
 
 ## Contents
 
-- [ames_model.json](ames_model.json): Trained XGBoost model.
 - [AmesHousing.tsv](AmesHousing.tsv): Original dataset.
-- [AmesHousingPreprocessedTest.csv](AmesHousingPreprocessedTest.csv): Preprocessed test dataset, which is held out and not used.
-- [AmesHousingPreprocessedTrain.csv](AmesHousingPreprocessedTrain.csv): Preprocessed training dataset.
-- [calculate_plots.ipynb](calculate_plots.ipynb): Notebook for calculating the PDP and ICE plot data for PDPilot.
 - [dataset_preprocessing.ipynb](dataset_preprocessing.ipynb): Notebook for preprocessing the dataset.
+- [AmesHousingPreprocessedTrain.csv](AmesHousingPreprocessedTrain.csv): Preprocessed training dataset.
+- [AmesHousingPreprocessedTest.csv](AmesHousingPreprocessedTest.csv): Preprocessed test dataset, which is held out and not used.
 - [modeling.ipynb](modeling.ipynb): Notebook for training the model.
+- [ames_model.json](ames_model.json): Trained XGBoost model.
+- [calculate_plots.ipynb](calculate_plots.ipynb): Notebook for calculating the PDP and ICE plot data for PDPilot. The output is this [JSON file](https://drive.google.com/file/d/1tV77SUk9BKS9HpLOeok73eFLRmHVvuka/view?usp=sharing), which I pre-computed and provided for participants so that we would not have to wait on the computation during the study.
 - [widget.ipynb](widget.ipynb): Notebook running the PDPilot widget.
 
 ## Data Dictionary
