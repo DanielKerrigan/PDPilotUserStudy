@@ -10,6 +10,8 @@ This repository contains the material for the user study on [PDPilot](https://gi
 - [churn](churn): The Churn dataset and notebook for training the model and running PDPilot. This dataset is used during the tutorial.
 - [ames](ames): The Ames, Iowa housing dataset, trained model, and notebooks for preprocessing the dataset, training the model, calculating the plots, and running PDPilot. This dataset is for the main model analysis that the participant performs.
 
+Note that we conducted the user study using version 0.5.2 of PDPilot, which used a default value of 0.15 for `mixed_shape_tolerance`, which is the tolerance parameter for filtering PDPs by shape. We later updated the default value to 0.29.
+
 ## Installation
 
 To run the code for the study, you'll need Python 3.8 - 3.11, XGBoost, Jupyter lab or notebook, and pdpilot. Below are examples of setting up an environment using [conda](https://docs.conda.io/en/latest/miniconda.html) and [venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/#creating-a-virtual-environment).
