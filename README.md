@@ -11,7 +11,7 @@ This repository contains the material for the user study on [PDPilot](https://gi
 - [ames](ames): The Ames, Iowa housing dataset, trained model, and notebooks for preprocessing the dataset, training the model, calculating the plots, and running PDPilot. This dataset is for the main model analysis that the participant performs.
 - [results](results): Interview transcripts and thematic analysis codes.
 
-Note that we conducted the user study using version 0.5.2 of PDPilot, which used a default value of 0.15 for `mixed_shape_tolerance`, which is the tolerance parameter for filtering PDPs by shape. We later updated the default value to 0.29.
+Note that we conducted the user study using version 0.5.2 of PDPilot, which used a default value of 0.15 for `mixed_shape_tolerance`, which is the tolerance parameter for filtering PDPs by shape. We later updated the default value to 0.29. See PDPilot's [changelog](https://github.com/DanielKerrigan/PDPilot/blob/main/CHANGELOG.md) for a summary of additional changes that we made to the tool since running the study.
 
 ## Installation
 
